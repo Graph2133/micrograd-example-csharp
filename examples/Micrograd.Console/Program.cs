@@ -3,7 +3,7 @@ using Spectre.Console;
 
 var exampleNumber = AnsiConsole.Prompt(
     new SelectionPrompt<int>()
-        .Title("What's your [green]favorite fruit[/]?")
+        .Title("Select example:")
         .UseConverter(value =>
         {
             var displayTitle = value switch
