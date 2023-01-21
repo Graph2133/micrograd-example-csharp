@@ -20,7 +20,7 @@ var exampleNumber = AnsiConsole.Prompt(
 
 Action runExample = exampleNumber switch
 {
-    1 => () => Examples.FunctionGradient(),
+    1 => () => Examples.RunFunctionGradient(),
     2 => () => Examples.RunBinaryClassificationExample(),
     3 => () => Examples.RunImageRecognition(),
     _ => () => AnsiConsole.MarkupLine("[red]Invalid choice[/]")

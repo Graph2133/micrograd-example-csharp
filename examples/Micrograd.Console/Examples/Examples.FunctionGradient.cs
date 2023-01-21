@@ -7,7 +7,7 @@ namespace Micrograd.Console.Examples
         /// <summary>
         /// Calculation of the gradient for the 'y = x1w1 + x2w2 + b' expression.
         /// </summary>
-        public static void FunctionGradient()
+        public static void RunFunctionGradient()
         {
             var x1 = new Value(2.0) { Label = "x1" };
             var x2 = new Value(0.0) { Label = "x2" };
