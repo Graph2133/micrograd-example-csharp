@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Micrograd", "Micrograd\Micrograd.csproj", "{8BF4E1E5-4776-4566-BAD5-C99E643E547D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Micrograd.Console", "examples\Micrograd.Console\Micrograd.Console.csproj", "{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{96C7CEBA-BBF3-4514-B83D-C40CA70E10C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BF4E1E5-4776-4566-BAD5-C99E643E547D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF4E1E5-4776-4566-BAD5-C99E643E547D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF4E1E5-4776-4566-BAD5-C99E643E547D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF4E1E5-4776-4566-BAD5-C99E643E547D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62DCD4F1-2F96-4B69-9A3C-308FAA7652B2} = {96C7CEBA-BBF3-4514-B83D-C40CA70E10C2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94AC00DC-2D2A-4D6A-8586-6836C1E55390}
+	EndGlobalSection
+EndGlobal
