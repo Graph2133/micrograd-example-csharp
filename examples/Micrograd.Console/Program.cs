@@ -23,7 +23,7 @@ Action runExample = exampleNumber switch
     1 => () => Examples.RunFunctionGradient(),
     2 => () => Examples.RunBinaryClassificationExample(),
     3 => () => Examples.RunImageRecognition(),
-    _ => () => AnsiConsole.MarkupLine("[red]Invalid choice[/]")
+    _ => () => AnsiConsole.MarkupLine("Invalid choice")
 };
 
 runExample();
