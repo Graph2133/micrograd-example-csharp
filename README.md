@@ -10,5 +10,5 @@ The examples are:
 * `Image recognition` - recognition of handwritten digits from the MNIST dataset using MLP.
 
 ### Micrograd.Console (example project) dependencies
-* [ScottPlot](https://github.com/ScottPlot/ScottPlot)
-* [Spectre.Console](https://github.com/spectreconsole/spectre.console)
+* [ScottPlot](https://github.com/ScottPlot/ScottPlot) - for plotting the loss function.
+* [Spectre.Console](https://github.com/spectreconsole/spectre.console) - for the console UI.
