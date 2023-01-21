@@ -6,15 +6,13 @@ var exampleNumber = AnsiConsole.Prompt(
         .Title("Select example:")
         .UseConverter(value =>
         {
-            var displayTitle = value switch
+            return value switch
             {
                 1 => "Calculation of the gradient for the 'y = x1w1 + x2w2 + b' function",
                 2 => "Binary classification",
                 3 => "MNIST dataset image recognition",
                 _ => "Unknown"
             };
-
-            return displayTitle;
         })
         .AddChoices(new[] { 1, 2, 3 }));
 
