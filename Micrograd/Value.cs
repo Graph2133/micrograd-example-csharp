@@ -114,7 +114,7 @@ namespace Micrograd
 
             this.Gradient = 1;
 
-            foreach(var val in Enumerable.Reverse(topology))
+            foreach (var val in Enumerable.Reverse(topology))
             {
                 val._backward?.Invoke();
             }

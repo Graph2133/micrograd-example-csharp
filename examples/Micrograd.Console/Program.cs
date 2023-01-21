@@ -13,10 +13,10 @@ var exampleNumber = AnsiConsole.Prompt(
                 3 => "MNIST dataset image recognition",
                 _ => "Unknown"
             };
-            
+
             return displayTitle;
         })
-        .AddChoices(new[] { 1, 2 ,3 }));
+        .AddChoices(new[] { 1, 2, 3 }));
 
 Action runExample = exampleNumber switch
 {
