@@ -65,9 +65,7 @@ namespace Micrograd.Console.Examples
             AnsiConsole.MarkupLine($"Accuracy: [yellow]{(float)correct / testImages.Length * 100.0:0.###}%[/]");
 
             // Manual prediction mode
-            var manualPredictionMode = AnsiConsole.Ask<string>("[yellow] Enter manual prediction mode (y/n) ?[/]");
-
-            while (manualPredictionMode.Equals("y", StringComparison.OrdinalIgnoreCase))
+            while (AnsiConsole.Confirm("Select image to predict ?"))
             {
                 var index = AnsiConsole.Ask<int>("[yellow] Enter image index ?[/]");
                 var values = Array.ConvertAll<double, Value>(testImages[index], x => x);
@@ -76,13 +74,10 @@ namespace Micrograd.Console.Examples
                 var maxIndex = Array.IndexOf(preds, max);
                 AnsiConsole.MarkupLine($"Predicted: [yellow]{maxIndex}[/]");
                 AnsiConsole.MarkupLine($"Expected: [yellow]{testLabels[index]}[/]");
-
+                
                 var dimension = Math.Pow(testImages[index].Length, 0.5);
-                // Print image by using PrintImage function
-                PrintImage((int)dimension, (int)dimension, testImages[index]);
 
-                // Ask to continue manual prediction mode
-                manualPredictionMode = AnsiConsole.Ask<string>("[yellow] Continue manual prediction mode (y/n) ?[/]");
+                PrintImage((int)dimension, (int)dimension, testImages[index]);
             }
         }
 

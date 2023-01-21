@@ -56,7 +56,7 @@ namespace Micrograd.Console.Examples
             }
 
             // Draw the loss function
-            if (AnsiConsole.Confirm("Draw loss function ?"))
+            if (AnsiConsole.Confirm("Draw the loss function ?"))
             {
                 var plt = new ScottPlot.Plot(800, 600);
                 plt.XLabel("Iteration");
