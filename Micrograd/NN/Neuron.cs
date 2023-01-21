@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Micrograd.Utilities;
 
-namespace Micrograd.Network
+namespace Micrograd.NN
 {
     public class Neuron : Module
     {

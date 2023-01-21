@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Micrograd.Network
+namespace Micrograd.NN
 {
     public class Layer : Module
     {

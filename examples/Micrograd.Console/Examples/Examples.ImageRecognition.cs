@@ -1,5 +1,5 @@
 ﻿using Micrograd.Console.Extensions;
-using Micrograd.Network;
+using Micrograd.NN;
 using Spectre.Console;
 
 namespace Micrograd.Console.Examples

@@ -1,4 +1,4 @@
-﻿namespace Micrograd.Network
+﻿namespace Micrograd.NN
 {
     public abstract class Module
     {
