@@ -5,9 +5,9 @@ namespace Micrograd.Console.Examples
     public partial class Examples
     {
         /// <summary>
-        /// Calculation of the gradient in the 'y = x1w1 + x2w2 + b' expression
+        /// Calculation of the gradient for the 'y = x1w1 + x2w2 + b' expression.
         /// </summary>
-        public static void RunSimpleExpression()
+        public static void FunctionGradient()
         {
             var x1 = new Value(2.0) { Label = "x1" };
             var x2 = new Value(0.0) { Label = "x2" };

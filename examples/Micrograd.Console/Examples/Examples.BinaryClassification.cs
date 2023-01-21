@@ -55,15 +55,12 @@ namespace Micrograd.Console.Examples
                 AnsiConsole.WriteLine($"Loss: {loss.Data}");
             }
 
-            // Draw the loss (mean squared error)
-            var drawLossFunction = AnsiConsole.Prompt(
-                new TextPrompt<string>("[grey][[Optional]][/] [yellow] Draw loss function (y/n) [/]?")
-                    .AllowEmpty());
-
-
-            if (drawLossFunction?.Equals("y", StringComparison.OrdinalIgnoreCase) == true)
+            // Draw the loss function
+            if (AnsiConsole.Confirm("Draw loss function ?"))
             {
                 var plt = new ScottPlot.Plot(800, 600);
+                plt.XLabel("Iteration");
+                plt.YLabel("Loss");
                 var xValues = Enumerable.Range(0, numberOfIteration).Select(v => (double)v).ToArray();
                 plt.AddScatter(xValues, losses);
 
